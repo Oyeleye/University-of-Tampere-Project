@@ -17,3 +17,22 @@ With JavaFX, define the interface in a FXML file.
 In React/Material-UI, the menu should be in <AppBar> and display the text with <Typography>.
 
 First deadline is 19.3. 12.00, final deadline is 24.3. 23:59
+
+
+
+Exercise 2.3 (Small 3/2 points)
+You can do the exercise with JavaFX (and NetBeans), or with React/create-react-app and Material-UI. 
+
+Build the following program:
+
+The program consists of
+
+A line of text
+Menus with
+An update text option which opens a dialog where the user can type in text that will appear in the interface.
+An example wireframe of how the application could be like:
+wireframe for exercise 2.3.
+
+JavaFX program should have mnemonics and accelerator keys for (some of the) menu options. In React/Material-UI solution you should utilise "makeStyles" for relevant parts of the interface (what are those is up to you).
+
+First deadline is 19.3. 12.00, final deadline is 24.3. 23:59
