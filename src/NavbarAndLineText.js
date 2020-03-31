@@ -133,7 +133,7 @@ function App() {
 								<MenuItem onClick={openDialog}>About</MenuItem>
 								<MenuItem onClick={toggleTextUpdate}>Update</MenuItem>
 								<MenuItem component={ Link } to='/about'>Info</MenuItem>
-						
+								<MenuItem component={ Link } to='/adddate'>Add date</MenuItem>
 							</Menu>
 						</div>
 
@@ -145,6 +145,9 @@ function App() {
 						</Typography>
 						<Typography component={ Link } to='/about'  className='typography'  variant='h6' color='inherit'>
 							Help
+						</Typography>
+						<Typography component={ Link } to='/date'  className='typography'  variant='h6' color='inherit'>
+							Date
 						</Typography>
 					</Toolbar>
 				</AppBar>

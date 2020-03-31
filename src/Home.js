@@ -6,6 +6,7 @@ import MyInput from './components/MyInput';
 import { Radio, RadioGroup, FormControl, FormControlLabel, 
     Typography, Button } 
 from '@material-ui/core/';
+import AddDate from './components/AddDate';
 
 
 
@@ -44,6 +45,9 @@ export class Home extends Component {
             <div>
                 <NavbarAndLineText />
             </div>
+            <br />
+            <AddDate />
+            <br />
             {this.state.buttonClicked? <UpdateTypographyB /> : <UpdateTypographyA />}
                 <Button component= {Link} to="/about" variant="contained" >
                     Game room

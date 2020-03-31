@@ -53,3 +53,19 @@ An example wireframe of how the application could be like:
 wireframe for exercise 3.1
 
 First deadline is 26.3. 12.00, final deadline is 31.3. 23:59
+
+
+<Strong> Exercise 3.2 (Small 3/2 points) </Strong>
+This exercise has slightly different reguirements for with JavaFX  and React/create-react-app and Material-UI.
+
+With JavaFX, build the following program:
+
+The is a list and a button. Clicking the button opens file chooser where user can select multiple files. Then the list displays names and file sizes (file object has method length() which tells file size in bytes).
+
+With React build a page which consists of material-ui list. The list items consist of date as text and a date selector a text field. There are two buttons, one adds a new line and another removes a list. The date selector on each line updates the date in that line user can select elements in the list and the selected line is removed.
+
+Example wireframes of how the applications could be like:
+
+wireframe for exercise 3.2
+
+First deadline is 26.3. 12.00, final deadline is 31.3. 23:59

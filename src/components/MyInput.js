@@ -13,7 +13,7 @@ export default function MyInput() {
     const [eighthNum, setEighthNum] = React.useState(0);
     let inputValue = [firstNum,secondNum,thirdNum,fourthNum,fifthNum,
              sixthNum,seventhNum,eighthNum,
-        ]
+        ];
 
     const handleFirstNum = () => {
         setFirstNum(firstNum? firstNum=>0 : firstNum=>1);
@@ -39,7 +39,6 @@ export default function MyInput() {
     const handleEighthNum = () => {
         setEighthNum(eighthNum? eighthNum=>0 : eighthNum=>1);
     };
-
       
     return (
         <div style={{border:'solid green', marginTop:'50px', width:'30%'}}>
