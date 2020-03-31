@@ -36,7 +36,7 @@
 
 
   .typography {
-    padding-left: 20%;
+    width: 6rem;
   }
   
   .typography:hover {
@@ -44,7 +44,7 @@
   }
   
   .typography2{
-    padding-left: 2%;
+    width: 6rem;
   }
   
   .typography2:hover {

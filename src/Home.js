@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import NavbarAndLineText from './NavbarAndLineText';
+import ColourSlider from './components/ColourSlider';
+import MyInput from './components/MyInput';
 import { Radio, RadioGroup, FormControl, FormControlLabel, 
-    Typography, Button, TextField, Checkbox } 
+    Typography, Button } 
 from '@material-ui/core/';
 
 
@@ -33,14 +35,6 @@ export class Home extends Component {
         this.setState( {radioClicked: !this.state.radioClicked} );
     }
 
-    state = {
-        input: 0
-    }
-
-    newInputSet = (newInput) => {
-        this.setState( {input: newInput} );
-    }
-   
     
   render(){
  
@@ -58,35 +52,29 @@ export class Home extends Component {
                     Instruction
                 </Button>
             <div className='border-bg'>
-            <div className='border-radio'>
-                <div className={ this.state.radioClicked  ? 'colour-style2' : 'colour-style' }>
-                    Colour
+                <div className='border-radio'>
+                    <div className={ this.state.radioClicked  ? 'colour-style2' : 'colour-style' }>
+                        Colour
+                    </div>
+                    <div>
+                        <FormControl component='fieldset'>
+                            <RadioGroup onChange={this.handleRadioToggle}>
+                                <FormControlLabel value='first colour' control={ <Radio /> } label='First Colour' />
+                                <FormControlLabel value='second colour'   control={ <Radio /> } label='Second Colour'/>
+                            </RadioGroup>
+                        </FormControl>
+                    </div>
                 </div>
-
-                <div>
-                <FormControl component='fieldset'>
-                    <RadioGroup onChange={this.handleRadioToggle}>
-                        <FormControlLabel value='first colour' control={ <Radio /> } label='First Colour' />
-                        <FormControlLabel value='second colour'   control={ <Radio /> } label='Second Colour'/>
-                    </RadioGroup>
-                </FormControl>
-                </div>
-            </div>
             </div>
             <div>
-                <form className="form-class" noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Outlined" value={this.state.input}
-                    variant="outlined" />
-                </form>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(1)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(0)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(1)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(0)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(1)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(0)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(1)}/>
-                <Checkbox color="primary" onClick={()=> this.newInputSet(0)}/>
-            </div>          
+                <ColourSlider /> 
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div>
+                <MyInput /> 
+            </div>        
         </>
     );
   

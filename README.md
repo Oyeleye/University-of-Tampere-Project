@@ -36,3 +36,20 @@ wireframe for exercise 2.3.
 JavaFX program should have mnemonics and accelerator keys for (some of the) menu options. In React/Material-UI solution you should utilise "makeStyles" for relevant parts of the interface (what are those is up to you).
 
 First deadline is 19.3. 12.00, final deadline is 24.3. 23:59
+
+
+
+Exercise 3.1 (Small 3/2 points)
+You can do the exercise with JavaFX (and NetBeans), or with React/create-react-app and Material-UI.
+
+Build the following program:
+
+The program consists of three vertical sliders.
+
+Moving the sliders control red, green and blue elements of the background of the area where the sliders are. 
+
+An example wireframe of how the application could be like:
+
+wireframe for exercise 3.1
+
+First deadline is 26.3. 12.00, final deadline is 31.3. 23:59

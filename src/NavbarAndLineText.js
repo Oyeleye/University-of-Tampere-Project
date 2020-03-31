@@ -80,9 +80,9 @@ function App() {
         setDialogUpdate(true);
 	};
 	
-	const handleTextUpdate = () => {
-		setTextChange(true);
-	}
+	const toggleTextUpdate = () => {
+		setTextChange(textChange=>!textChange);
+	};
 
 	const handleMenu = event => {
 		setAnchorEl(event.currentTarget);
@@ -131,7 +131,7 @@ function App() {
 								onClose={handleMenuClose}
 							>
 								<MenuItem onClick={openDialog}>About</MenuItem>
-								<MenuItem onClick={handleTextUpdate}>Update</MenuItem>
+								<MenuItem onClick={toggleTextUpdate}>Update</MenuItem>
 								<MenuItem component={ Link } to='/about'>Info</MenuItem>
 						
 							</Menu>
