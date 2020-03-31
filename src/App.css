@@ -1,0 +1,69 @@
+
+
+.colour-style {
+  background-color: rgba(6, 23, 122, 0.3);
+  color: #012161;
+  font-size: 200%;
+  font-weight: normal;
+ }
+ 
+ .colour-style2 {
+   background-color: rgba(149, 199, 10, 0.3);
+   color: #4d040a;
+   font-size: 200%;
+   font-weight: bold;
+  }
+
+  .border-radio {
+    
+    border: solid;
+    border-color: rgba(4, 58, 158, 0.3);
+    width: 96%;
+  }
+
+  .border-bg {
+    border: solid;
+    padding: 1rem;
+    border-color: rgba(6, 23, 122, 0.7);
+    width: 28%;
+  }
+
+  .btn-style {
+    background-color: #012161;
+    color: #012161;
+    background: #012161;
+  }
+
+
+  .typography {
+    padding-left: 20%;
+  }
+  
+  .typography:hover {
+    color: rgb(223, 12, 12); 
+  }
+  
+  .typography2{
+    padding-left: 2%;
+  }
+  
+  .typography2:hover {
+    color: rgb(223, 12, 12); 
+  }
+  
+
+  .nav {
+    text-align: center;
+  }
+
+  
+
+  .form-class {
+    margin: 40px;
+
+  }
+
+  .update-typography{
+    color: #012161;
+  }
+  
